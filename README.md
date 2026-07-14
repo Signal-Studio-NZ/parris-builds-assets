@@ -18,6 +18,15 @@ https://cdn.jsdelivr.net/gh/Signal-Studio-NZ/parris-builds-assets@main/testimoni
 
 That URL is what gets pasted into the FlowPlay video player in Webflow (self-hosted / custom video source). For a URL going onto a live page, prefer pinning to a commit SHA or tag over `@main` (see caching notes below).
 
+## What's in here
+
+| File | What it is |
+|------|-----------|
+| `showcase-1.mp4` | Property showcase clip, 28s. Current live showcase video. |
+| `testimonial-1.mp4` | Superseded. Holds an earlier cut of the *showcase* clip, not a testimonial - it predates the showcase/testimonial split. Safe to delete once nothing references it. |
+
+Name files by what the video **is**: `showcase-*` for property/work showcase clips, `testimonial-*` for actual pieces to camera. Don't reuse a retired filename for new content - pick the next number instead, since reusing one invites the jsDelivr caching problems described below.
+
 ## Conventions
 
 - **Keep filenames and commit messages neutral.** No personal names or identifying context in filenames, commits, or this README.
