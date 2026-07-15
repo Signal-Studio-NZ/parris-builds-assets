@@ -22,10 +22,12 @@ That URL is what gets pasted into the FlowPlay video player in Webflow (self-hos
 
 | File | What it is |
 |------|-----------|
-| `showcase-1.mp4` | Property showcase clip, 28s. Current live showcase video. |
-| `testimonial-1.mp4` | Superseded. Holds an earlier cut of the *showcase* clip, not a testimonial - it predates the showcase/testimonial split. Safe to delete once nothing references it. |
+| `showcase-1.mp4` | Property showcase clip, 28s. |
+| `testimonial-2.mp4` | Testimonial, 60s. |
 
-Name files by what the video **is**: `showcase-*` for property/work showcase clips, `testimonial-*` for actual pieces to camera. Don't reuse a retired filename for new content - pick the next number instead, since reusing one invites the jsDelivr caching problems described below.
+Name files by what the video **is**: `showcase-*` for property/work showcase clips, `testimonial-*` for actual pieces to camera.
+
+Don't reuse a retired filename for new content - pick the next number instead, since reusing one invites the jsDelivr caching problems described below. This is why the testimonial is `-2`: `testimonial-1.mp4` was a since-deleted test file that held an early cut of the *showcase* clip, from before the showcase/testimonial split. Numbering never resets, even after a delete.
 
 ## Conventions
 
